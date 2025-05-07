@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="rating-section" class="container mx-auto flex justify-center items-center max-w-[700px] min-w-[375px] h-[110vh]">
+    <div class="max-w-[70%] items-center justify-center bg-gray-700 rounded-lg text-white p-8 ">
+      <div class="flex flex-col gap-5 text-white py-2">
+        <div class="bg-gray-600 rounded-full size-[40px] place-content-center  place-items-center "><img src="/images/icon-star.svg" alt="" class="w-[20px]"></div>
+        <h2 class="font-semibold text-lg"> How did we do?</h2>
+        <p id="para">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        <div id="list" class=" flex gap-2 justify-between items-center">
+          <button id="one" class=" bg-gray-900 hover:bg-gray-400 rounded-full size-[45px] place-content-center  text-center"> 1 </button>
+          <button id="two" class=" bg-gray-900 hover:bg-gray-400 rounded-full size-[45px] place-content-center  text-center">2</button>
+          <button id="three" class=" bg-gray-900 hover:bg-gray-400 rounded-full size-[45px] place-content-center  text-center">3</button>
+          <button id="four" class=" bg-gray-900 hover:bg-gray-400 rounded-full size-[45px] place-content-center  text-center">4</button>
+          <button id="five" class=" bg-gray-900 hover:bg-gray-400 rounded-full size-[45px] place-content-center  text-center">5</button>
+        </div>
+        <button id="submit-btn" class="w-[100%] bg-[hsl(25,97%,53%)] text-black font-semibold py-3 rounded-full hover:bg-white ">SUBMIT</button>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="thankyou-section" class=" hidden container mx-auto flex justify-center items-center max-w-[700px] min-w-[375px] h-[110vh]">
+    <div class="max-w-[70%] items-center justify-center bg-gray-700 rounded-lg text-white p-8 ">
+      <div class="thank-you-content flex flex-col justify-center items-center gap-3 p-5">
+        <span><img src="/images/illustration-thank-you.svg" alt="" class="w-[180px]"></span>
+        <div class="bg-gray-600 rounded-full py-1 px-4"> <p>You selected <span id="rating"> n </span> out of 5</p> </div>
+        <h2 class="font-semibold text-lg">Thank you!</h2>
+        <p class="text-center pretty">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!
+        </p>
+    </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
